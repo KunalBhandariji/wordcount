@@ -1,0 +1,10 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def homepage(request):
+    #return (HttpResponse("HEllo"))
+    return (render(request,"home.html"))
+    
+def count(request):
+    return (render(request,"count.html"))
+
